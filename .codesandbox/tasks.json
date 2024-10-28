@@ -12,12 +12,12 @@
     "start": {
       "name": "start",
       "command": "yarn start",
-      "runAtStart": true
+      "runAtStart": false
     },
     "build": {
       "name": "build",
       "command": "yarn build",
-      "runAtStart": false
+      "runAtStart": true
     },
     "test": {
       "name": "test",
