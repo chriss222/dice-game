@@ -1,5 +1,3 @@
-import reverse from "/public/assets/reverse_ico.png";
-
 export default function Stats({ value, above, setAbove }) {
   const winChance = above ? 100 - value : value;
   const multiplier = winChance > 0 ? (100 / winChance).toFixed(2) : 0;
@@ -21,7 +19,11 @@ export default function Stats({ value, above, setAbove }) {
       </div>
       <button className="reverse-btn" onClick={() => setAbove(!above)}>
         {above ? "Switch to Roll Below" : "Switch to Roll Above"}{" "}
-        <img height={20} width={20} src={reverse} />
+        <img
+          height={20}
+          width={20}
+          src={`${process.env.PUBLIC_URL}/assets/reverse_ico.png`}
+        />
       </button>
     </>
   );

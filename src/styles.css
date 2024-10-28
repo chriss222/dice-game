@@ -7,7 +7,7 @@ body {
   --header-height: 60px;
 }
 :disabled {
-  opacity: 0.7
+  opacity: 0.7;
 }
 .error {
   color: red;
@@ -43,7 +43,7 @@ input.error {
 }
 .header {
   font-size: 26px;
-  color: #b1bad3;;
+  color: #b1bad3;
 }
 .restart-btn {
   font-size: 14px;
@@ -123,17 +123,17 @@ input.error {
   z-index: 3;
 }
 .result {
-    transform: translate(-50%);
-    padding: 12px 6px;
-    background: #707a7a;
-    border-radius: 12px 12px 2px 2px;
-    position: relative;
-    height: 44px;
-    width: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
+  transform: translate(-50%);
+  padding: 12px 6px;
+  background: #707a7a;
+  border-radius: 12px 12px 2px 2px;
+  position: relative;
+  height: 44px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
 }
 .result::after {
   content: "";
@@ -155,7 +155,7 @@ input[type="range"]::-webkit-slider-thumb {
   height: 50px;
   width: 50px;
   background: none;
-  background-image: url("/assets/dice.png");
+  background-image: url("/public/assets/dice.png");
   background-size: cover;
   border-radius: 50%;
   border: none;
@@ -178,8 +178,8 @@ input[type="range"]::-webkit-slider-thumb {
   padding: 10px 20px;
 }
 .bet-controls {
-    display: flex;
-    height: 100%;
+  display: flex;
+  height: 100%;
 }
 .input-container {
   display: flex;
@@ -212,7 +212,7 @@ input[type="range"]::-webkit-slider-thumb {
 .play-btn {
   background: #00e701;
   border: none;
-  border-radius 8px;
+  /* border-radius 8px; */
   width: 100%;
   height: 48px;
   font-weight: 600;
@@ -256,7 +256,7 @@ input[type="range"]::-webkit-slider-thumb {
   border: none;
   padding: 8px 6px;
   border-radius: 2px;
-  cursor: pointer
+  cursor: pointer;
 }
 .reveal {
   animation: resultReveal 2.4s ease;
@@ -267,11 +267,11 @@ input[type="range"]::-webkit-slider-thumb {
     opacity: 1;
   }
   40% {
-    transform: translateX(-50%) scale(1); 
+    transform: translateX(-50%) scale(1);
     opacity: 1;
   }
   45% {
-    transform: translateX(-50%) scale(1.2); 
+    transform: translateX(-50%) scale(1.2);
     opacity: 1;
   }
   50% {
