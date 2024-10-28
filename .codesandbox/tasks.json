@@ -4,6 +4,10 @@
     {
       "command": "yarn install",
       "name": "Install Dependencies"
+    },
+    {
+      "command": "git pull origin main",
+      "name": "Pull Latest Changes"
     }
   ],
 
@@ -12,7 +16,7 @@
     "start": {
       "name": "start",
       "command": "yarn start",
-      "runAtStart": false
+      "runAtStart": true
     },
     "build": {
       "name": "build",
